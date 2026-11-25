@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => {
     },
     resolve: {
       tsconfigPaths: true,
-      alias: [{ find: /^@higgsfield-ai\\/icons(\\/.*)?$/, replacement: QUANTA_ICONS_SHIM }],
+      alias: [{ find: /^@higgsfield-ai\\/icons( /.*)?$/, replacement: QUANTA_ICONS_SHIM }],
     },
     plugins: [
       cloudflare({ viteEnvironment: { name: "ssr" } }),
